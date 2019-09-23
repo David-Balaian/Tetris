@@ -1,0 +1,79 @@
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 1000px;
+    height: 90vh;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content{
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    /* margin: 0; */
+}
+#gameover{
+    display: none;
+    width:200px;
+    height: 100px;
+    background-color: wheat;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+#current{
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 200px;
+    border: 1px solid black;
+
+}
+#score{
+    height: 600px;
+    background-color: blueviolet
+}
+#points{
+    width: 150px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    margin: 0;
+}
+div{
+    color: aliceblue;
+
+}
+button{
+    height: 40px;
+    width: 200px;
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    transition-duration: 0.2s;
+    color: aliceblue;
+
+}
+button:hover{
+    background-color: brown;
+    transition-duration: 0.2s;
+}
+
