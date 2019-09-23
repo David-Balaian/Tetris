@@ -27,6 +27,7 @@ section{
 }
 #gameover{
     display: none;
+    margin-top: 30px;
     width:200px;
     height: 100px;
     background-color: wheat;
@@ -40,7 +41,7 @@ section{
     flex-wrap: wrap;
     width: 150px;
     height: 150px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     border: 1px solid black;
 
 }
