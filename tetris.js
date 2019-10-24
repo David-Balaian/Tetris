@@ -80,8 +80,10 @@ function makeItem() {
 function itemrotate(e) {
     createremoveitem(id, "inherit", rotate, arr);
     if (e.code == "Space") {
+        canRotate = ((checkBottomarr[1].every((item) => ((item != undefined) && (item.style.backgroundColor != boxcolor))))&&((checkBottomarr[2].every(item => (item != undefined) && (item.style.backgroundColor != boxcolor))))) ? true : false;
+       console.log(canRotate);
         if (c == 19 || c == 0) { return }
-        rotate = (rotate == 4) ? 1 : ++rotate;
+        rotate = (canRotate) ? (rotate == 4) ? 1 : ++rotate : rotate;
     }
     checkBottomarr = createremoveitem(id, boxcolor, rotate, arr);
 }
@@ -119,7 +121,6 @@ function down() {
         id = makeItem(r, c);
     }
 }
-down.cal
 
 function createremoveitem(itemid = 0, color, rotate, arr) {
     if (itemid == 1) {
@@ -205,9 +206,6 @@ function createremoveitem(itemid = 0, color, rotate, arr) {
                     arr[r + 1][c - 2],
                     arr[r][c - 1],
                     arr[r + 2][c - 1],
-
-
-
                 ]
             ]
         }
